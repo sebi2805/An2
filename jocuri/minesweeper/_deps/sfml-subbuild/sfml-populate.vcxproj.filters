@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\1019eb4afc374c667ceb63e99a2bb3de\sfml-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\f0b888a893faf8cf3d5a3bd3b42d3245\sfml-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\aaa8a05fbb42246584895f54256ff74d\sfml-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\LPT00079\Desktop\jocuri\minesweeper\_deps\sfml-subbuild\CMakeFiles\sfml-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{12ECFFB9-CA75-37A5-A3CD-43D50A11BA01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

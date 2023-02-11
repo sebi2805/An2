@@ -1,0 +1,12 @@
+SELECT DenGrupa,NrStudenti 
+FROM GRUPA_ANCS 
+WHERE CodSerie = 1;
+
+SELECT NrGrupe
+FROM SERIE_ANCS
+WHERE CodSerie = 4;
+
+
+SELECT DenGrupa,CodGrupa,NrStudenti,DenSerie
+FROM SERIE_ANCS,GRUPA_ANCS
+WHERE MOD( SERIE_ANCS.CodSerie,2) = 1 AND SERIE_ANCS.CodSerie = GRUPA_ANCS.CodSerie; 

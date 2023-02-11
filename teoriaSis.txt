@@ -1,0 +1,59 @@
+Teoria Sistemelor
+
+O funcție de transfer este în ingineria sistemelor 
+o reprezentare matematică a relației dintre intrarea și ieșirea 
+a unui sistem liniar invariant în timp. 
+Funcțiile de transfer sunt funcții de sistem dinamic în spații de frecvență.
+
+Sistem fizic– o portiune din realitate delimitata de restul universului considerat c
+a "exterior".
+
+Semnale – functii matematice care descriu evoulutia unor marimi fizice
+
+Sisteme LTI 
+	Liniare si independente de timp
+
+Impuls Dirac trece prin x=0 si are aria=1 pe un grafic x=t si y=f(t)
+Treapta unitate este integrala semnalului Dirac
+
+Sisteme cu bucla deschisa =  sisteme forward
+Sisteme cu bucla inchisa = sisteme cu feedback
+
+Constanta  K  este factorul de transfer definit in jurul punctului de operare 
+si este panta caracteristicii in acel punct.
+	k= y/u unde y= y-y0 x=x-x0
+
+Blocurile sunt descrise prin modele statice liniare. C – controlerul (regulatorul) 
+cu amplificarea KC, P – procesul controlat avind amplificarea KP.
+r  este valoarea dorita (referinta, set-point), u este controlul, x  
+este marimea controlata (aservita). 
+
+e=r-y, eroare e egala cu referinta minus iesire.
+
+Definim amplificarea buclei Kl= Kc*Kp
+Eroare relativa e inversul buclei, e/r=1/Kl => ca valoarea aservita urmareste 
+valoarea de referinta cu o eroare de 1%
+daca Kl este prea mare sistemul devine instabil, trb sa avem un sistem care permite un 
+Kl cat mai mare
+
+Pentru un sistem dinamic efectul unei actiuni nu se instaureaza instantaneu 
+(sistemul are memorie).
+
+Un sistem este un dispozitiv care “transforma” semnalul de intrare intr-un 
+semnal de iesire.
+
+O alta posibilitate de descriere a unui sistem LTI este prin raspunsul la semnale 
+sinusoidale, numit raspuns in frecventa. Bazata pe teoria functiilor complexe si
+ transformarea Laplace, teoria are multe concepte si rezultate extrem de puternice.
+
+În teoria sistemelor, răspunsul în frecvență este măsura răspunsului oricărui sistem 
+la ieșirea unui semnal de frecvență variabilă (dar de amplitudine constantă) și 
+intrarea sa. În domeniul electronicii poate fi întâlnit în relație cu amplificatoare
+ electronice, microfoane și difuzoare.
+
+În matematică, o ecuație diferențială ordinară este o ecuație diferențială care descrie 
+o relație prestabilită între o funcție necunoscută, argumentele acesteia și derivatele
+ ordinare ale sale.
+
+Functia de transfer este un raport de polinoame in s.
+

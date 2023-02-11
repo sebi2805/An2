@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1591352541 source:c:\users\grigore\desktop\253_cti_grigoregheorgheeduard_colocviu_poo\main.cpp
+	<iostream>
+	<vector>
+	<cstring>
+

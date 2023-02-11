@@ -1,0 +1,249 @@
+Teoria e fara documentatie in 45 de min
+> 1)Fie R(A,B,C,D,E,G)
+> F={A->C;B->D;D->B;BD->E}
+> a)Gasiti 2 chei minimale pentru R si explicati de ce sunt chei si
+> minimale .(Algoritm pe care ni-l cerea: Se calc inchiderile multimilor
+> formate din 1 atribut,apoi combinatii de 2 atribute,etc pana gasim
+> combinatii a caror inchidere este R ->sunt chei)
+> b)De la F cu axiomele lui Armstrong si cu regulile de inferenta
+> calculati toate DF care se deduc direct(din F aplicand o singura data
+> cele de mai sus)
+> - sunt f multe deci ar mai trebui explicat si redus unele
+> c)Descompuneti intr-o desc FN3 care sa pastreaza DF si JFP
+> (demonstrati ca pastr DF si JFP)
+> - eu numai am aberat putin pe tema si a fost bine
+> 2)Se da R=... si o descompunere ro=...Sa se dem ca e jfp.(alg cu
+> tabelul din curs)
+>
+> 3) SQL (cu ORICE documentatie in 40 de min)
+>
+> NOTE(Matricola, Nume, Pren, Disciplina, Nota, Data)
+> MEDIE(Matricola, Nume, Prenume, Medie_An, An)
+> a) creati tabelele
+> b) inserati niste valori in ele
+> Restrictii: la inserare in Medie Medie_an se calc automat daca
+> studentul respectiv are note la toate cele 10 discipline altfel nu se
+> pune nimic.La inserare in Note data=sysdate(default)
+> c)schimbat o nota
+> d)sters o nota / medie
+> e) selectat tori studentii cu media mai mare decat media unei grupe
+> introduse de la tastatura (ordonat descrescator dupa medii grupat dupa
+> grupa)
+> f) Raport
+> Cu nr linii: Nr de charact pe linii, etc.
+>
+> "Titlu"
+> PAg 1 Data:sysdate
+> Nr Gr Nume Pren Medie
+> 341 X X 9.33
+> Y Y 8.99
+> z z 8.88
+> ...
+> Media grupa: 8.66
+> 341 ....
+> ..........
+>
+> Decan:
+>
+> Trebuie afisati pe grupe in ord descr a mediilor toti stud care
+> indeplinesc cond de bursa (>8 media si ...)
+> Trebuie salvat si intr-un fisier raport.lst in vederea salvarii
+> ulterioare.
+
+> 1. Se da R=a,b,c,d,e,f, F= (cred ca era) {a-b, a-f, b-e, d-b, e-a}
+> a. gasiti o cheie minimala. e unica?
+> b. axioma a2 si R2 sa se aplice pe F si sa se obtina alte 6 noi DF
+> c. fnbc
+> d. fiecare descopmunere este fnbc sa se arate
+> 2. Se dau F si R de mai sus si descompunerea P=..., => j.f.p
+> 3. Aceeasi problema de sql care s-a mai dat:cu foart emici
+> modificari (una sau doua)
+
+Prima parte (~45min):
+P1. Se da R = {A, B, C, D, E, F} shi multzimea de DF
+F = {A-> B, CD->A, BC->D, AE->F, CE->D}. Se cere:
+a. sa se afle o cheie minima. Sa se afla daca mai exista
+shi alte chei minime.
+b. sa se afla descompunea FNBC folosind algorimtul. La fiecare
+pas se cerea sa se verifice proprietatea FNBC a submultzimilor
+determinate.
+c. sa se demonstreze ca descompunerea de la b. are proprietatea
+de j.f.p.
+d. sa se demonstreze ca descompunearea de la b. conserva DF.
+
+P2. Sa se afla o descompunere sigma a lui R folsind agloritmul
+de descompunere FN3.
+
+Partea a doua (~40min):
+a. sa se creeze bazele de date. Se cerea sa punem noi ce
+contrangere credem de cuviintza. Erau trei baze de date.
+b. sa se faca o stergere shi un update pe una din baze.
+c. se faca un update mai ciudatzel le una din baze de date.
+Vroia sa facem update la SALARII la campul SALARIU la angajatzii
+care indeplineau un anumit criteriu. Campun SALARIU se calcula
+pe baza informatziilor din PONTAJ.
+d. un raport.
+
+Bazele de date era ceva de genul:
+ANGAJATI: ID, NUME, PRENUME...
+PONTAJ: ID, AN, LUNA, ORE_LUCRATE...
+SALARIU: ID, AN, LUNA, SALARIU
+
+1:
+Se da schema de relatie: R=(A,B,C,D,E,F) si multimea de DF
+F={A->B,CD->A,AE->F, CE->D}
+a) sa se gaseasca o cheie minimala si sa se arate daca R mai are si alte
+chei minimale
+b) sa se gaseasca pt R o descompunere ro astfel incat toate subschemele sa
+fie in FNBC. La fiecare pas al aplic alg se vor calcula proiectiile
+anterioare de DF pe subschemele asociate cu pasul curent. Se vor dem in
+fiecare pas de ce subschemele sunt in FNBC.
+c)Sa se dem ca desc ro are prop de j.f.p. aplicand alg cunoscut
+d)Sa se analizeze pastrarea dependentelor functionale din F de catre
+descompunerea ro
+P2. Pt schema de relatii R si DF date sa se gaseasca o desc ro in FN3
+P3.Sa se scrie o secv SQL+ pentru:
+a) crearea tabelelor
+ANGAJAT PONTAJ SALARIU
+
+Id_Ang N(4) An N(4) An(4)
+Nume V(20) Luna N(2) Luna(2)
+Prenume V(20) Id_Ang N(4) Id_Ang N(4)
+Id_Dep N(2) Nr_Ore_Lucru N Salarii N
+Data_Ang D Lei_Ora N
+Meserie V(20) Lei_Prima N
+Nr_Ore_Lipsa N
+Retineri N
+b) Operatie de modificare si sterfere cu tabela PONTAJ
+c)completati in campul salariu din tabela salarii donform formulei
+specificate pt topti angajatii introdusi in pontaj care au lipsit mai putin
+de 10% din timpul de lucru.Anul si luna vor fi introduse de la tastatura
+Salariu = (ore_lucr -ore_lipsite) * lei_ora+prima-retineri
+sa se construiasca un raport sub forma unui tabel pt toti angajatii din
+depart nr par care nu au nici o ora lipsa , se vor ordona tralalalala
+intelegeti voi...
+
+p1+p2 -50 minute
+p1. R=(A, B, C, D, E, F, G, H)
+F=( F-GH, D-F, A-B, C-A, CD-E)
+a. sa se calculeze D+.
+b. sa se gaseasca o cheie minimala si sa se calculeze inchiderea ei.
+c. fnbc
+d. sa se arate ca descompunerea ro de la fnbc pastreaza dependentele functionale.
+
+p2. R=(A, B, C, D, E)
+ro=(AD, AB, BE, CDE, ACE)
+F = (AM UITAT)
+Sa se demonstreze ca ro e jpf cu algoritmul din curs.
+
+p3(40 minute). Pe care ne-a dat-o Boicea!!
+tot ceva in genul celei de pe 18 ian, dar foarte multe cerinte la raport (adica sa va aduceti documentatie super completa despre rapoarte)
+
+. Se da R = A B C D E F si F= { A->B,CD->A,BC->D,AE->F,CE->D}
+Se cere:
+a) sa se gaseasca o cheie pentru R si sa calculeze inchiderea
+b) sa se gaseasca o descompunere ro in FNBC
+
+2. Se da R = A B C D E F si F = {A->B,A->F,B->E,D->B,E->A}si ro = (AB, BCD, AEF,
+CDE )
+Se cere:
+a) sa se gaseasca o cheie pt R si sa se demonstreze logic si calculand
+inchiderea.
+b) sa se demonstreze j.f.p.
+c) sa se gaseasca o descompunere in FN3.
+
+3. Problema de SQL
+Se dadeau trei tabele, PRODUSE, PRETURI_PRODUSE si INFORMATII_LUNARE. Se
+cerea crearea tabelelor si stabilirea relatiilor dintre acestea ( sa stabilim
+singuri cheile ), inserarea unei linii intr-o coloana, o stergere, un update
+destul de complicat si un raport de facut.
+
+P1. Se da schema de relatie R=ABCDEF si multimea de DF F={A->E,D->F, C->A,
+CD->E}. Se cere:
+
+a. Sa se gaseasca mai intai logic o cheie minimala pentru R si apoi sa se
+calculeze inchiderea sa.(a pus accent sa respectam cerinta intocmai). Exista si
+alte chei minimale?
+
+b. Sa se gaseasca o descompunere ro a schemei date in FNBC si sa se calculeze
+la fiecare pas proiectia de DF de la pasul anterior pe subschema de relatie din
+pasul curent.(a pus accent si pe chestia asta - sa calculam fiecare proiectie
+in parte, nu doar "sa desenam" - citez). Sa se arate ca fiecare subschema
+obtinuta este in FNBC utilizand definitia FNBC.
+
+c. ro obtinut pastreaza DF?
+
+P2. (surpriza!!!) Se dau 2 tranzactii T1 si T2:
+
+T1: Read A->a1; a1+1->a1; Write a1->A
+Read B->b1; b1+1->b1; Write b1->B
+
+T2: Read A->a2; a2*2->a2; Write a2->A
+Read B->b2; b2*2->b2; Write b2->B
+
+Se da si constrangerea de integritate A=B.
+
+a. Sa se gaseasca o secventa de executie care sa puna in evidenta o pierdere de
+operatie.
+
+b. Sa se gaseasca o secventa de executie a operatiilor care sa duca la o BD
+neconsistenta.
+
+c. Sa se gaseasca o secventa de executie a operatiilor care sa duca la o BD
+consistenta.
+
+Timp (P1+P2): 45 min.
+
+pauza : 2min
+
+P3. Se dau tabelele :
+
+ANGAJAT: ID_Angajat, nume, prenume, cod_departament, varsta, etc
+
+SALARIU_LUNAR: ID_Angajat, luna, an, prima, salariu_baza, penalizare,
+salariu_net.
+
+PLAFON_SALARII: ID_PLAFON, Den_plafon, Salariu_minim, Salariu_maxim
+
+Obs: initial campul salariu_net este null. El va fi inlocuit cu expresia
+SALARIU_NET=SALARIU_BAZA+PRIMA-PENALIZARE.
+
+Cheile primare si straine le stabilim noi. "Atentie la chei" - citat din
+Popeanga.
+
+Cerinte:
+a. sa se creeze tabelele
+b.sa se efectueze o operatie de inserare si o operatie de stergere in/din
+SALARIU_LUNAR (oarecare)
+c. sa se inlocuiasca Salariu_net cu expresia de mai sus pt inregistrarile care
+- au luna si anul egale cu doua variabile citite de la tastatura
+- au salariul cuprins intre limitele impuse de plafonul PLAFON_TESA
+- persoana in cauza are varsta para
+- in luna si anul respectiv penalizarea nu depaseste o val data (nu-mi aduc
+aminte prea bine)
+-etc
+d. se cere un raport in care sunt incluse persoanele care au prima mai mare de
+100 in formatul urmator:
+
+data
+nr pagina
+
+SITUATIA ....
+
+NR_DEP NUME PRENUME SAL_BAZA PRIMA PENALIZARE(?)
+
+1 Ionescu George 1000 120 10
+
+wiefjsjdf xxxxxxx
+
+<<rand gol>>
+
+2 popescu gigel 1022 150 21
+
+etc
+
+unde persoanele sunt trecute in ordine crescatoare a SAL_BAZA(parca) si la
+trecerea de la un departament la altul se lasa un rand gol. 60 caractere/linie
+30 linii pe ecran; se cerea sa se specifice cum am facut sa scriem nr de pagina
+( raspuns: nr de pagina se afiseaza implicit cand se face titlul cu
+TTITLE 'SITUATIA...' :) ).
