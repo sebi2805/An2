@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1495098172 source:c:\users\marian\desktop\randomized_qs\main.cpp
+	<iostream>
+	<cstdlib>
+

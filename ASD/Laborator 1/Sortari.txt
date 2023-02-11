@@ -1,0 +1,74 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void InsertionSort (int A[], int n)
+{
+    int j, i, key;
+    for (i = 1; i < n; i++)
+    {
+        j = i;
+        key = A[i];
+        while (j > 0 && A[j - 1] > key)
+        {
+            A[j] = A[j - 1];
+            j--;
+        }
+        A[j] = key;
+    }
+}
+
+void swap (int *x, int *y)
+{
+    int h = *x;
+    *x = *y;
+    *y = h;
+}
+
+void SelectionSort (int A[], int n)
+{
+    int minn, i, j;
+    for (i = 0; i < n - 1; i++)
+    {
+        minn = i;
+        for (j = i + 1; j < n; j++)
+            if (A[j] < A[minn])
+                minn = j;
+        if (A[minn] < A[i])
+            swap(&A[minn], &A[i]);
+    }
+}
+
+void BubbleSort (int  A[], int n)
+{
+    int ok = 0, i;
+    while (!ok)
+    {
+        ok = 1;
+        for (i = 1; i < n; i++)
+            if (A[i] < A[i - 1])
+                swap (&A[i], &A[i - 1]), ok = 0;
+    }
+}
+
+int main()
+{
+    int n, i, sir[100];
+
+    printf("Dati nr elementelor sirului: ");
+    scanf("%d", &n);
+
+    for(i=0;i<n;i++)
+    {
+        printf("sir[%d]= ",i);
+        scanf("%d", &sir[i]);
+    }
+
+    InsertionSort(sir, n);
+    ///BubbleSort(sir, n);
+    ///SelectionSort(sir, n);
+
+    printf("Sirul ordonat crescator este: ");
+    for(i = 0; i < n; i++)
+        printf("%d ", sir[i]);
+    return 0;
+}

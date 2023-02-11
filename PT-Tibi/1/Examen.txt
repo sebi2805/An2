@@ -1,0 +1,40 @@
+1
+a
+Avem n stackuri, inseram elementul i in primul stack care are top < i, 
+facem o cautare binara pe acele stack.top() ca sa putem insera in log n
+inserarea a n elemente => nlogn, ba chiar n log (s) unde s e numarul de stackuri 
+negoale, avand in vedere ca putem tine minte numarul actual de stackuri
+!!!Daca nu exista niciun stack negol care sa aiaba stack.top< i => creeam unul nou
+b
+Numarul de stackuri, pentru ca stim ca o sa creeam un stack nou doar atunci cand niciunul 
+dintre cele precendente indeplinteste conditia 
+
+2
+Parcurgem vectorul de la 0 la n-1 cu i, introducem v[i] in hastable 
+verificam daca exista un element -v[i] in hastable, daca da raspundem
+daca pana la final nu putem raspunde => nu exista
+
+3
+a.DFS in order output 
+b.Sa deducem e mai greu, eu aici as baga niste abureli, ca si daca luam prin random un elemetn avem sansa de 1/n 
+sa fie ales corect, as aduce vorba si de creeare unui arbore pe baza unui vector care e deja sortat
+
+4.
+n are treaba ca 5*... e acelasi algoritm
+Modificare merge sort. Merge sort reprezinta sortarea unui vector prin unificarea jumatatilor deja sortate
+Impartim vectorul la jumatate astfel mid=st+(dr-st)/2 pana cand putem rezolva cel mai usor caz <=> 
+lungimea subvectorului este 1, comparam cele doua elemente si le interschimba la nevoie, insemnand ca avem o inversiune => 
+unificarea subvectorilor astfel k=st => parcugem cei doi subvectori de la st cu i si de la mid cu j pentru a decide cine ocupa
+locul k in subvectorul curent, daca un element din subvectorul drept < un element din subvectorul stang => avem mid-i inversiuni
+ptc elementul[j] are in stanga lui mid-i elemente mai mari decat element
+Acest algoritm este optim deoarece putem avea 2^n inversiuni si abureala
+
+5.
+parcurgem vectorul de la 0 la n-1 cu i, daca daca in hashtable avem deja v[i] facem v[i]++, daca nu inseram cu valoarea 1
+dupa aceea comparam hashtable celor doi vectori
+
+6.
+parcurgem vecotrul de la i la j si facem sum + = v[k]
+
+b. facem suma partiala pt toatele elemente din v intr un vector sum [n], astfel sum[i]= sum[i-1]+v[v]
+pentru a raspunde la query suma dintre i si j, vom calcula sum[j]-sum[i]+v[i]

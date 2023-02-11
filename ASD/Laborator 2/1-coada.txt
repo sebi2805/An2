@@ -1,0 +1,81 @@
+#include <iostream>
+#include <fstream>
+
+using namespace std;
+
+struct nod
+{
+    int info;
+    nod *next;
+};
+
+void Inserare(nod* &oldp, int b)
+{
+    nod*q=new nod;
+    q->next=NULL;
+    q->info=b;
+    oldp->next=q;
+    oldp=q;
+}
+
+void Afisare(nod* start)
+{
+    while(start!=NULL)
+    {
+        cout<<start->info<<endl;
+        start=start->next;
+    }
+
+}
+
+int Cautare(nod* start, int k)
+{
+    for (node* p = start; p != NULL; p = p->next)
+        if (p->info == k)
+            return 1;
+    return 0;
+}
+
+void stergere_lista()
+{
+    
+
+}
+
+int main()
+{
+    nod *start, *oldp;
+    int x,k,j;
+    ifstream f("elemlista");
+    if(f>>x)
+    {
+        start=new nod;
+        start->info=x;
+        start->next=NULL;
+        oldp=start;
+        while(f>>x)
+        {
+            Inserare(oldp, x);
+        }
+    }
+    cout<< "Dati elementul care vreti sa fie cautat in lista: "<<"\n";
+    cin>>k;
+    Cautare(start,k);
+    if(Cautare(start,k))
+        cout<<"Elementul "<< k <<" a fost gasit in lista"<< "\n";
+    else
+        cout<<"Elementul "<< k << "nu a fost gasit in lista"<< "\n";
+
+    cout<<"Dati elementul care vreti sa fie inserat in lista: "<< "\n";
+    cin>>j;
+    
+    Inserare(oldp, j);
+
+
+
+    cout<<"Intreaga lista afisata: " << "\n";
+    Afisare(start);
+
+    return 0;
+    f.close();
+}
