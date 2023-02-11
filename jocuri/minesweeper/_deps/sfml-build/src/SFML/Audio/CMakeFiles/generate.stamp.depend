@@ -1,0 +1,7 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/FindOpenAL.cmake
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/FindPackageMessage.cmake
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/cmake/Modules/FindFLAC.cmake
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/cmake/Modules/FindVorbis.cmake
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/src/SFML/Audio/CMakeLists.txt

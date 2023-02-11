@@ -1,0 +1,133 @@
+P1:
+Se da schema de relatie: R=(A,B,C,D,E,F) si multimea
+de DF
+F={A->B,CD->A,AE->F, CE->D}
+a) sa se gaseasca o cheie minimala si sa se arate daca
+R mai are si alte
+chei minimale
+b) sa se gaseasca pt R o descompunere ro astfel incat
+toate subschemele sa
+fie in FNBC. La fiecare pas al aplic alg se vor
+calcula proiectiile
+anterioare de DF pe subschemele asociate cu pasul
+curent. Se vor dem in
+fiecare pas de ce subschemele sunt in FNBC.
+c)Sa se dem ca desc ro are prop de j.f.p. aplicand alg
+cunoscut
+d)Sa se analizeze pastrarea dependentelor functionale
+din F de catre
+descompunerea ro
+P2. Pt schema de relatii R si DF date sa se gaseasca o
+desc ro in FN3
+P3.Sa se scrie o secv SQL+ pentru:
+a) crearea tabelelor
+ANGAJAT PONTAJ SALARIU
+
+Id_Ang N(4) An N(4) An(4)
+Nume V(20) Luna N(2) Luna(2)
+Prenume V(20) Id_Ang N(4) Id_Ang N(4)
+Id_Dep N(2) Nr_Ore_Lucru N Salarii N
+Data_Ang D Lei_Ora N
+Meserie V(20) Lei_Prima N
+Nr_Ore_Lipsa N
+Retineri N
+b) Operatie de modificare si sterfere cu tabela PONTAJ
+c)completati in campul salariu din tabela salarii
+donform formulei
+specificate pt topti angajatii introdusi in pontaj
+care au lipsit mai putin
+de 10% din timpul de lucru.Anul si luna vor fi
+introduse de la tastatura
+Salariu = (ore_lucr -ore_lipsite) *
+lei_ora+prima-retineri
+sa se construiasca un raport sub forma unui tabel pt
+toti angajatii din
+depart nr par care nu au nici o ora lipsa , se vor
+ordona tralalalala
+intelegeti voi...
+
+----------------------------------------------------
+
+Prima parte (~45min):
+P1. Se da R = {A, B, C, D, E, F} shi multzimea de DF
+F = {A-> B, CD->A, BC->D, AE->F, CE->D}. Se cere:
+a. sa se afle o cheie minima. Sa se afla daca mai
+exista
+shi alte chei minime.
+b. sa se afla descompunea FNBC folosind algorimtul. La
+fiecare
+pas se cerea sa se verifice proprietatea FNBC a
+submultzimilor
+determinate.
+c. sa se demonstreze ca descompunerea de la b. are
+proprietatea
+de j.f.p.
+d. sa se demonstreze ca descompunearea de la b.
+conserva DF.
+
+P2. Sa se afla o descompunere sigma a lui R folsind
+agloritmul
+de descompunere FN3.
+
+Partea a doua (~40min):
+a. sa se creeze bazele de date. Se cerea sa punem noi
+ce
+contrangere credem de cuviintza. Erau trei baze de
+date.
+b. sa se faca o stergere shi un update pe una din
+baze.
+c. se faca un update mai ciudatzel le una din baze de
+date.
+Vroia sa facem update la SALARII la campul SALARIU la
+angajatzii
+care indeplineau un anumit criteriu. Campun SALARIU se
+calcula
+pe baza informatziilor din PONTAJ.
+d. un raport.
+
+Bazele de date era ceva de genul:
+ANGAJATI: ID, NUME, PRENUME...
+PONTAJ: ID, AN, LUNA, ORE_LUCRATE...
+SALARIU: ID, AN, LUNA, SALARIU
+
+Obs: seminaritul care a venit a fost Popeanga.
+
+------------------------------------------------
+
+p1+p2 -50 minute
+p1. R=(A, B, C, D, E, F, G, H)
+F=( F-GH, D-F, A-B, C-A, CD-E)
+a. sa se calculeze D+.
+b. sa se gaseasca o cheie minimala si sa se calculeze
+inchiderea ei.
+c. fnbc
+d. sa se arate ca descompunerea ro de la fnbc
+pastreaza dependentele functionale.
+
+p2. R=(A, B, C, D, E)
+ro=(AD, AB, BE, CDE, ACE)
+F = (AM UITAT)
+Sa se demonstreze ca ro e jpf cu algoritmul din curs.
+
+p3(40 minute). Pe care ne-a dat-o Boicea!!
+tot ceva in genul celei de pe 18 ian, dar foarte multe
+cerinte la raport (adica sa va aduceti documentatie
+super completa despre rapoarte)
+
+-------------------------------------------------
+
+Iata ce a povestit Emiran intr-o scurta discutzie
+intima:
+
+> 1. Se da R=a,b,c,d,e,f, F= (cred ca era) {a-b, a-f,
+b-e, d-b, e-a} 
+> a. gasiti o cheie minimala. e unica? 
+> b. axioma a2 si R2 sa se aplice pe F si sa se obtina
+alte 6 noi DF 
+> c. fnbc 
+> d. fiecare descopmunere este fnbc sa se arate 
+> 2. Se dau F si R de mai sus si descompunerea P=...,
+=> j.f.p 
+> 3. Aceeasi problema de sql care s-a mai dat:cu foart
+emici
+> modificari (una sau doua)

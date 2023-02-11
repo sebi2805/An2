@@ -1,0 +1,14 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/BasicConfigVersion-SameMajorVersion.cmake.in
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CMakePackageConfigHelpers.cmake
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CheckIncludeFile.c.in
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CheckIncludeFile.cmake
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CheckIncludeFileCXX.cmake
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CheckTypeSize.c.in
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/CheckTypeSize.cmake
+C:/Program Files/JetBrains/CLion 2022.2.3/bin/cmake/win/share/cmake-3.23/Modules/WriteBasicConfigVersionFile.cmake
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/CMakeFiles/CheckTypeSize/SIZEOF_VOID_PTR.c
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/CMakeLists.txt
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/cmake/Config.cmake
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/cmake/SFMLConfig.cmake.in
+C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-src/cmake/SFMLConfigDependencies.cmake.in

@@ -1,0 +1,115 @@
+
+
+Show Recent Messages (F3)
+
+AndreeaFulger appears to be offline and will receive your messages after signing in. You can also send a message to AndreeaFulger's mobile device. 
+ Send an SMS Message (Ctrl+T)
+
+You currently appear offline to AndreeaFulger.
+
+otipatun: andreea
+otipatun: orice F trebuie atdus mai intai la forma canonica?
+otipatun: ca ana nu  le aduce neaparat
+AndreeaFulger: ana, daca ne da sa dem ca nu se pastreaza dep funct dupa ce facem schema FNBC
+AndreeaFulger: faci ca in cursul de la cb
+AndreeaFulger: ?
+AndreeaFulger: pentru alea care nu's evidente
+AndreeaFulger: ?
+otipatun: nu
+otipatun: mie mi se pare ca totusi s-ar vedea
+otipatun: adica algoritmul ala cu proiectii e dat de proful NOSTRU
+otipatun: ma gandesc ca poate chiar l-ar deranja oarecum daca am folosi ceva de la alt prof (adica exista si posibilitatea asta)
+otipatun: andreea
+otipatun: sa-mi zici ce ai stabilit cu atributu ala care e in plus
+AndreeaFulger: cand fac cheia il las
+AndreeaFulger: ana... da ce algoritm cu proiectii
+AndreeaFulger: ca inteleg ca trebuie sa scriem pentru fiecare
+AndreeaFulger: proiectia
+AndreeaFulger: dar nu ne rezolva intotdeauna problemele
+AndreeaFulger: in fine
+otipatun: deci scriem pentru fiecare proiectia
+otipatun: si din reuniunea proiectiilor ar trebui sa rezulte logic F
+otipatun: nu?
+BUZZ!!!
+AndreeaFulger: pai da
+AndreeaFulger: numai ca uneori nu iese
+otipatun: si la unele se vede ca nu rezulta logic
+AndreeaFulger: una din proiectii
+AndreeaFulger: si eu as face cu proc
+AndreeaFulger: de la cb
+otipatun: hmm
+otipatun: mie mi se pare ciudat sa folosim alg de  la altcinevaa
+otipatun: dar nush ce sa zic
+otipatun: deci tu in cheie il folosesti
+otipatun: deci asta inseamna ca i l folosesati si la FNBC nu?
+AndreeaFulger: da
+otipatun: si la FN3 NU il folosesti deloc?
+otipatun: uite-te putin pe ultima pag din pr rezolvate?
+otipatun: .
+AndreeaFulger: ce e cu ea
+AndreeaFulger: ?
+otipatun: ti se pare corecata?
+otipatun: adica poti sa scrii CD cheie si gata?
+AndreeaFulger: eu una intotdeauna cand nu am ceva in dreapta
+AndreeaFulger: scriu ca trebuie sa fac neaparat parte din cheie
+AndreeaFulger: si de-acolo pornesc
+AndreeaFulger: o maresc sau nu...
+AndreeaFulger: eventual... aplic axiomele si regulile de inferenta
+AndreeaFulger: ca sa o demonstrez
+otipatun: ultima pagina e aia cu desenu ..
+otipatun: pe aia te uiti?
+AndreeaFulger: aaaa... pai la aia...
+AndreeaFulger: nush care e cerinta
+otipatun: pai sa afli FNBC
+otipatun: e o schema
+otipatun: uita-te la ultimele 3 buline
+otipatun: ti se pare corect
+otipatun: ?
+AndreeaFulger: cu cde-ul ala
+otipatun: da
+otipatun: adica si pro blema care au avut-o ei la examen tot cam asa se termina
+otipatun: si mie mi s-ar parea ca nu mai trebuie sa alegi si descompunerea CD cheie
+otipatun: sau ba da
+otipatun: tu ce zici?
+AndreeaFulger: eu una nu mai faceam despartirea aia
+AndreeaFulger: adica daca am cheie CD si D->E
+AndreeaFulger: asa o las
+otipatun: hmm
+AndreeaFulger: desi... da
+otipatun: dar totusi d nu contine cd
+AndreeaFulger: in cazul asta
+AndreeaFulger: se pot separa
+AndreeaFulger: dar de ex...
+AndreeaFulger: la pag 6 pe verso
+AndreeaFulger: se ajunge la CDE cu productia CE->D
+otipatun: scrie ca e incorect
+otipatun: pe fata sau verso?
+AndreeaFulger: nu... nu prea echivalent
+AndreeaFulger: pe verso
+AndreeaFulger: aia incompleta
+otipatun: asa
+AndreeaFulger: nush... nu e echivalenta ca acolo
+AndreeaFulger: ajung la CE->D
+AndreeaFulger: si am cheia evidentiata'
+AndreeaFulger: aici... la D->E
+AndreeaFulger: da... se poate elimina E-ul
+AndreeaFulger: numa ca mi separe ciudat sa ramana cheia sg
+otipatun: stiu
+otipatun: dc e sa faci proiecti pt ea
+otipatun: ce scrii?
+otipatun: ca nu are nimik in proiectie...
+AndreeaFulger: aaa
+AndreeaFulger: pai punem multimea vida
+AndreeaFulger: am mai vazut
+AndreeaFulger: in teme pe adrem
+AndreeaFulger: pus asa
+otipatun: da?
+otipatun: aha
+otipatun: am vazut si eu acum
+otipatun: mai am o intrebare
+otipatun: andreea
+otipatun: pana la urma in FN3 se foloseste
+otipatun: ca nu mi-ai zis
+otipatun: era o intrebare pe undeva mai sus
+
+ 

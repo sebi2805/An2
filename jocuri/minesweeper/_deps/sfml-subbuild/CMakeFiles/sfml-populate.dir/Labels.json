@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/sfml-populate"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/aaa8a05fbb42246584895f54256ff74d/sfml-populate.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/f0b888a893faf8cf3d5a3bd3b42d3245/sfml-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-build.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-download.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-install.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-test.rule"
+		},
+		{
+			"file" : "C:/Users/LPT00079/Desktop/jocuri/minesweeper/_deps/sfml-subbuild/CMakeFiles/1019eb4afc374c667ceb63e99a2bb3de/sfml-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"sfml-populate"
+		],
+		"name" : "sfml-populate"
+	}
+}
