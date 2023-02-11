@@ -1,0 +1,19 @@
+double** malloc_sup_matrix (int n)
+{
+    double**    L;
+    int         i;
+
+    L = (double**)malloc((n)*sizeof(double*));
+
+    if(L == NULL)
+        printerror("allocating space for the matrix (rows).");        
+
+    for(i = 0;  i < n;  i++)
+    {
+        L[i] = (double*)malloc((n-i)*sizeof(double));
+        if(L[i] == NULL)
+            printerror("allocating space for the matrix (cols).");
+        L[i]-=i;
+    }
+    return L;
+}

@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1649308255 source:c:\users\sebi\desktop\azi23.02\hilbert\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1649308318 source:c:\users\sebi\desktop\hilbert\main.c
+	<stdio.h>
+	<stdlib.h>
+

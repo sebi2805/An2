@@ -1,0 +1,53 @@
+Switch > enable
+Switch # configure terminal
+
+Switch (config) # no ip domain-lookup
+Switch (config) # hostname SWDEJ
+Switch (config) # no cdp run
+Switch (config) # service password-encryption
+
+//Router: Router (config) # security passwords min-length 10
+//Router: Router (config) # login block-for 55 attends 3 within 15
+
+Switch (config) # enable secret ciscosecpa55
+Switch (config) # enable password ciscoenapa55
+
+Switch (config) # banner motd # Mesaj ...# 
+//Router: Router (config) # banner login #Accesul persoanelor neautorizate..
+
+Switch (config) # line console 0
+Switch (config-line) # password ciscoconpa55
+Switch (config-line) # login 
+Switch (config-line) # logging synchronous
+Switch (config-line) # exec-timeout 30 20
+Switch (config-line) # exit
+Switch (line) # line vty 0 15
+Switch (config-line) # password ciscovtypa55
+Switch (config-line) # login
+Switch (config-line) # logging synchronous
+Switch (config-line) # exec timeout 20 20
+Switch (config-line) # exit
+Switch (config-line) # end
+
+Switch # copy running-config startup-config
+Switch # config set 14:38:10 11 Oct 2022
+Switch # configure terminal
+Switch (config) # ip domain-name cti.ro
+Switch (config) # username Admin01 privilege 15 secret Admin01pa55
+Switch (config) # line vty 0 15 
+
+Switch (config-line) # transport input ssh
+Switch (config-line) # login local 
+Switch (config-line) # exit 
+
+Switch (config # crypyo key generate rsa
+Switch (config) # 2048
+
+Switch (config) # interface vlan 1
+//Router: Router (config) # interface gigabitethernet 0/0
+
+Switch (config-if) # description Legatura cu ramura 192.168.40.160/27
+Switch (config-if) # ip address 192.168.40.162 255.255.225.224
+Switch (config-if) # no shutdown 
+
+//comanda pt a comunica prin ssh : ssh -l Admin 192.168.40.162

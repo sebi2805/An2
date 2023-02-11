@@ -1,0 +1,23 @@
+unsigned int rotireStanga(unsigned int x, unsigned int r, unsigned int key) {
+    unsigned int codX = (x << r) | (x >> (8 * sizeof(unsigned int) - r));
+    codX = codX ^ key;
+    return codX;
+}
+
+unsigned int rotireDreapta(unsigned int x, unsigned int r, unsigned int key) {
+    unsigned int codX = (x >> r) | (x << (8 * sizeof(unsigned int) - r));
+    codX = codX ^ key;
+    return codX;
+}
+
+unsigned int decodificareStanga(unsigned int x, unsigned int r, unsigned int key) {
+    unsigned int decodX = x ^ key;
+    decodX = (decodX >> r) | (decodX << (8 * sizeof(unsigned int) - r));
+    return decodX;
+}
+
+unsigned int decodificareDreapta(unsigned int x, unsigned int r, unsigned int key) {
+    unsigned int decodX = x ^ key;
+    decodX = (decodX << r) | (decodX >> (8 * sizeof(unsigned int) - r));
+    return decodX;
+}

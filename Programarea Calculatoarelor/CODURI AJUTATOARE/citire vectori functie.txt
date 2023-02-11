@@ -1,0 +1,7 @@
+void citire(int nrClienti, Client client[]) {
+    for(int i = 0 ; i < nrClienti ; i++) {
+        printf("Numele clientului %d: ", i + 1);
+        scanf("%s", client[i].nume);
+
+        printf("Debit clientului %d: ", i + 1);
+        scanf("%f", &client[i].debit_cont.debit);

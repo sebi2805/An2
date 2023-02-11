@@ -1,0 +1,7 @@
+int fseek(FILE *pointer, long int offset, int position)
+pointer: pointer to a FILE object that identifies the stream.
+offset: number of bytes to offset from position
+position: position from where offset is added. 
+SEEK_END : It denotes end of the file.
+SEEK_SET : It denotes starting of the file.
+SEEK_CUR : It denotes file pointer’s current position.
